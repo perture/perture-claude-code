@@ -1,0 +1,26 @@
+{
+  "name": "perture",
+  "owner": {
+    "name": "Perture"
+  },
+  "description": "Private Perture thin-client plugin marketplace for Claude Code.",
+  "plugins": [
+    {
+      "name": "perture",
+      "source": "./plugins/perture",
+      "description": "Thin Claude Code connector for Perture brand context and performance memory.",
+      "displayName": "Perture",
+      "author": {
+        "name": "Perture"
+      },
+      "homepage": "https://app.perture.co/",
+      "category": "Productivity",
+      "tags": [
+        "brand",
+        "performance",
+        "memory",
+        "remote-mcp"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "perture",
+  "version": "0.1.0+claude.20260702",
+  "description": "Thin Claude Code connector for Perture brand context and performance memory.",
+  "author": {
+    "name": "Perture"
+  },
+  "homepage": "https://app.perture.co/",
+  "keywords": [
+    "brand",
+    "performance",
+    "memory",
+    "interfaces",
+    "remote-mcp"
+  ]
+}
