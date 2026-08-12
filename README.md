@@ -1,11 +1,16 @@
 # Perture Claude Code Plugin Marketplace
 
-Private Claude Code marketplace for the Perture thin-client plugin.
+Private source marketplace for the Perture thin-client plugin.
 
-This package is intentionally small. It does not contain Perture prompts, scoring,
-brand-rule logic, validation logic, or local generation code. The plugin only
-registers a remote Perture MCP server and short usage guidance. All privileged
-work runs on `https://app.perture.co`.
+This release candidate adds the explicit Perture Integration Gateway v1 adapter
+and keeps the remote MCP configuration as a compatibility fallback. It contains
+no Perture prompts, scoring logic, customer rules, credentials, or customer
+project data. Authentication, permissions, entitlements, memory, and validation
+remain server-side on `app.perture.co`.
+
+The gateway URL in this branch is a release target. This branch does not prove
+that the corresponding Perture app release has been deployed, and it should not
+replace the current compatible `main` package until that release is verified.
 
 ## Structure
 
@@ -15,17 +20,18 @@ plugins/perture/
   .claude-plugin/plugin.json
   .mcp.json
   assets/
-  skills/
+  scripts/
+  skills/perture/SKILL.md
   README.md
 ```
 
-## Local Test
+## Local test
 
 From the parent directory:
 
 ```bash
-claude plugin validate ./perture-claude-plugin
-claude plugin marketplace add ./perture-claude-plugin
+claude plugin validate ./perture-claude-code
+claude plugin marketplace add ./perture-claude-code
 ```
 
 Then inside Claude Code:
@@ -34,25 +40,13 @@ Then inside Claude Code:
 /plugin install perture@perture
 ```
 
-## GitHub Publishing
-
-Push this folder as its own repository. Users can add it as a marketplace:
-
-```bash
-claude plugin marketplace add <owner>/<repo>
-```
-
-Then install:
-
-```text
-/plugin install perture@perture
-```
-
 ## Authentication
 
-The plugin points Claude Code at `https://app.perture.co/mcp`. If the MCP
-connection handles OAuth, users should connect with their Perture account during
-plugin setup. For local fallback testing only, set:
+The compatibility MCP connection points to `https://app.perture.co/mcp`.
+The gateway adapter points to
+`https://app.perture.co/api/integrations/v1` and requires a token issued for
+the Claude Code gateway client and audience. Keep the token only in the local
+process environment:
 
 ```bash
 PERTURE_ACCESS_TOKEN=pto_...

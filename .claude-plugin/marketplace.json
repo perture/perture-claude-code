@@ -8,7 +8,7 @@
     {
       "name": "perture",
       "source": "./plugins/perture",
-      "description": "Thin Claude Code connector for Perture brand context and performance memory.",
+      "description": "Thin Claude Code connector for Perture brand context, frontend contracts, and validation.",
       "displayName": "Perture",
       "author": {
         "name": "Perture"
@@ -17,7 +17,8 @@
       "category": "Productivity",
       "tags": [
         "brand",
-        "performance",
+        "frontend",
+        "validation",
         "memory",
         "remote-mcp"
       ]

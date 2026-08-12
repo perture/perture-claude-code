@@ -1,15 +1,17 @@
 {
   "name": "perture",
-  "version": "0.1.0+claude.20260702",
-  "description": "Thin Claude Code connector for Perture brand context and performance memory.",
+  "version": "0.2.0+claude.20260812-agents",
+  "description": "Thin Claude Code connector for Perture brand context, frontend contracts, and validation.",
   "author": {
-    "name": "Perture"
+    "name": "Perture",
+    "email": "supportperture@gmail.com",
+    "url": "https://app.perture.co/"
   },
   "homepage": "https://app.perture.co/",
   "keywords": [
     "brand",
-    "performance",
     "memory",
+    "validation",
     "interfaces",
     "remote-mcp"
   ]
