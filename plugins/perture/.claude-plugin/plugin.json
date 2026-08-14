@@ -1,16 +1,19 @@
 {
   "name": "perture",
-  "version": "0.1.0+claude.20260702",
-  "description": "Thin Claude Code connector for Perture brand context and performance memory.",
+  "version": "0.3.0",
+  "description": "Connect Claude Code to Perture through authenticated remote tools.",
   "author": {
-    "name": "Perture"
+    "name": "Perture",
+    "email": "supportperture@gmail.com",
+    "url": "https://app.perture.co/"
   },
   "homepage": "https://app.perture.co/",
+  "repository": "https://github.com/perture/perture-claude-code",
+  "license": "UNLICENSED",
   "keywords": [
     "brand",
-    "performance",
-    "memory",
-    "interfaces",
-    "remote-mcp"
-  ]
+    "interfaces"
+  ],
+  "hooks": "./hooks/hooks.json",
+  "mcpServers": "./.mcp.json"
 }
