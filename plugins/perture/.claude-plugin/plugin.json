@@ -1,7 +1,7 @@
 {
   "name": "perture",
-  "version": "0.3.0",
-  "description": "Connect Claude Code to Perture through authenticated remote tools.",
+  "version": "0.8.5",
+  "description": "Use Perture brand context and local source checks from Claude Code.",
   "author": {
     "name": "Perture",
     "email": "supportperture@gmail.com",
