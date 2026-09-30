@@ -1,0 +1,39 @@
+{
+  "name": "perture",
+  "version": "0.8.6",
+  "description": "Build, review and safely fix brand-aware frontend interfaces with Perture.",
+  "author": {
+    "name": "Perture",
+    "email": "supportperture@gmail.com",
+    "url": "https://app.perture.co/"
+  },
+  "homepage": "https://app.perture.co/",
+  "repository": "https://github.com/perture/perture-codex-plugin",
+  "license": "UNLICENSED",
+  "keywords": [
+    "brand",
+    "interfaces"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Perture",
+    "shortDescription": "Keep AI-built frontend UI on brand.",
+    "longDescription": "Use Perture's connected brand contract with local repository intelligence and source checks. Private repository source stays local; authentication and brand authorization remain on Perture infrastructure.",
+    "developerName": "Perture",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive"
+    ],
+    "websiteURL": "https://app.perture.co/",
+    "privacyPolicyURL": "https://app.perture.co/privacy",
+    "termsOfServiceURL": "https://app.perture.co/terms",
+    "brandColor": "#111111",
+    "composerIcon": "./assets/icon.svg",
+    "logo": "./assets/logo.svg",
+    "logoDark": "./assets/logo-dark.svg",
+    "defaultPrompt": [
+      "Use Perture for this project."
+    ]
+  }
+}
