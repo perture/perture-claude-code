@@ -1,7 +1,7 @@
 {
   "name": "perture",
-  "version": "0.8.8",
-  "description": "Use Perture brand context and local source checks from Claude Code.",
+  "version": "0.8.9",
+  "description": "Use Perture brand context, local checks and scoped Pro Brand Page editing from Claude Code.",
   "author": {
     "name": "Perture",
     "email": "supportperture@gmail.com",
