@@ -1,6 +1,6 @@
 {
   "name": "perture",
-  "version": "0.8.10",
+  "version": "0.8.11",
   "description": "Use Perture brand context, local checks and scoped Pro Brand Page editing from Claude Code.",
   "author": {
     "name": "Perture",
@@ -15,7 +15,6 @@
     "brand",
     "interfaces"
   ],
-  "hooks": "./hooks/hooks.json",
   "mcpServers": "./.mcp.json",
   "icon": "./assets/icon.png"
 }
