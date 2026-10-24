@@ -12,6 +12,8 @@ update the installed package in the plugin browser when a release is available.
 Claude Code: run `/plugin marketplace add perture/perture-claude-code`, open
 `/plugin`, and install Perture from that marketplace. Authorize the account and
 reload plugins or start a new session. Use the Installed tab to update it.
+On Claude Code 2.1.275 or later, install in one step with
+`/plugin install perture --marketplace perture/perture-claude-code`.
 
 The current package requires the source-bound
 `interface-evidence.v1` runtime and signed `isv3` validation receipt for

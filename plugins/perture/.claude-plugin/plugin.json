@@ -1,6 +1,6 @@
 {
   "name": "perture",
-  "version": "0.8.9",
+  "version": "0.8.10",
   "description": "Use Perture brand context, local checks and scoped Pro Brand Page editing from Claude Code.",
   "author": {
     "name": "Perture",
@@ -8,6 +8,7 @@
     "url": "https://app.perture.co/"
   },
   "homepage": "https://app.perture.co/",
+  "privacyPolicyUrl": "https://app.perture.co/privacy",
   "repository": "https://github.com/perture/perture-claude-code",
   "license": "UNLICENSED",
   "keywords": [
